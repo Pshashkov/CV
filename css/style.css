@@ -1,0 +1,182 @@
+/* Global */
+*{
+  box-sizing: border-box;
+}
+
+h1, 
+h2, 
+h3, 
+h4  {
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  line-height: 1.5;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.main { 
+  display: flex;
+}
+
+/* Left side */
+.left-side {
+  position: relative;
+  left: 40px;
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #FFFFFF;
+}
+
+.left-side-title {
+  margin-top: 50px;
+  padding: 10px 40px;
+  text-transform: uppercase;
+}
+
+h1 { 
+  position: relative;
+  z-index: 1;
+  width: 800px;
+  letter-spacing: 20px
+}
+
+.left-side-title span {
+  font-size: 32;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.9);;
+}
+
+.photo {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.about-me {
+  padding: 20px 40px 40px;
+  text-align: justify;
+}
+
+.strengths { font-weight: 500; }
+
+.strengths-item { list-style-type: square; }
+
+.divider-white {
+  display: block;
+  width: 200px;
+  height: 2px;
+  margin: 20px 0px;
+  background-color: #FFFFFF;
+}
+
+.contacts {
+  margin: 50px 40px 40px;
+}
+
+.contacts-wrapper {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.contacts-item {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.contacts-item a { color: #FFFFFF; }
+
+.contacts-item a:hover { text-decoration: none; }
+
+#location {
+  padding-left: 30px;
+  background: url("../img/icons/location.png") no-repeat;
+}
+
+#email {
+  padding-left: 30px;
+  background: url("../img/icons/email.png") no-repeat;
+}
+
+/* Right side */
+.right-side {
+  position: relative;
+  left: 40px;
+  width: 560px;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.divider-black-vertical {
+  display: block;
+  float:right;
+  width: 2px;
+  height: 150px;
+  margin: 0 200px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.divider-black {
+  display: block;
+  width: 560px;
+  height: 2px;
+  margin: 250px 0px 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.block {
+  padding: 10px 60px;
+  text-align: justify;
+}
+
+.block h2 {
+  padding: 0 10px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #FFFFFF;
+}
+
+.courses-item,
+.skills-item,
+.language-item { 
+  list-style-type: circle; 
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.footer-github {
+  padding-left: 30px;
+  background: url("../img/icons/git.png") no-repeat;
+  color: #FFFFFF;
+}
+
+.footer-github:hover {
+  text-decoration: none;
+}
+
+.footer-year {
+  color: #FFFFFF;
+}
