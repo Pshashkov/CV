@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Pavel Shashkov CV</title>
+</head>
+<body>
+  <div class="container">
+    <main class="main">
+      <div class="left-side">
+        <div class="left-side-title">
+          <h1>Shashkov<span> Pavel</span></h1>
+          <p>Future Software engineer</p>
+        </div>
+        <figure class="photo">
+          <img src="img/photo.png" width = "400" height = "350" alt="Photo of Pavel Shashkov">
+        </figure>
+        <section class="about-me">
+          <h3>ABOUT ME</h3>
+          <p>I'm 41 years old. I'm an electronics engineer by profession, but I want to improve my programming skills. I've decided to become a software developer. I'm currently studying at the Sukhoi Gomel State Technical University.</p>
+          <p class="strengths">My strengths:</p>
+          <ul class="strengths-wrapper">
+            <li class="strengths-item">Conscientious</li>
+            <li class="strengths-item">Responsible</li>
+            <li class="strengths-item">Hardworking</li>
+            <li class="strengths-item">Team playing</li>
+          </ul>
+        </section>
+        <div class="divider-white"></div>
+        <section class="contacts">
+          <h3>CONTACTS:</h3>
+          <ul class="contacts-wrapper">
+            <li class="contacts-item" id="location">Belarus, Gomel</li>
+            <li class="contacts-item" id="email"><a href="mailto:pshashkov@yandex.by" target="blank">pshashkov@yandex.by</a></li>
+          </ul>
+        </section>
+      </div>
+      <div class="right-side">
+        <div class="divider-black-vertical"></div>
+        <div class="divider-black"></div>
+        <section class="block education">
+          <h2>Education:</h2>
+          <p>Online courses:</p>
+          <ul class="courses-wrapper">
+            <li class="courses-item">Codecademy: Course Learn CSS</li>
+            <li class="courses-item">Codecademy: Course Learn HTML</li>
+            <li class="courses-item">Sukhoi Gomel State Technical University: Information systems software (in process...)</li>
+          </ul>
+        </section>
+        <section class="block skills">
+          <h2>Skills:</h2>
+          <ul class="skills-wrapper">
+            <li class="skills-item">HTML5</li>
+            <li class="skills-item">CSS3</li>
+            <li class="skills-item">Git (in process...)</li>
+          </ul>
+        </section>
+        <section class="block language">
+          <h2>Languages:</h2>
+          <ul class="language-wrapper">
+            <li class="language-item">Russian</li>
+            <li class="language-item">English - Basic (I've been studying it with a tutor)</li>
+          </ul>
+        </section>
+        <section class="block code">
+          <h2>Code example:</h2>
+          <p>Codewars: An isogram is a word that has no repeating letters, consecutive or non-consecutive. Implement a function that determines whether a string that contains only letters is an isogram. Assume the empty string is an isogram. Ignore letter case.</p>
+          <pre><code class="language-javascript">
+  function isIsogram(str){
+    str = str.toLowerCase();
+    for (let i = 0; i &lt; str.length; i++) {
+      if (str.indexOf(str[i], i + 1) !== -1) {
+        return false;
+      }
+    }
+    return true;
+  }
+          </code></pre>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <a class="footer-github" href="https://github.com/Pshashkov" target="blank">My GitHub</a>
+      <p class="footer-year">2025</p>
+      <a class="footer__ipk" href="https://ipk.gstu.by//" target="blank">
+        <img src="img/logo-ggtu.png" width="70" height="50" alt="logo-ggtu">
+      </a>
+    </footer>
+  </div>
+</body>
+</html>
